@@ -5,10 +5,10 @@ const ContactSection = () => {
     <section id="contact" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <p className="text-primary uppercase tracking-[0.25em] text-sm mb-3">Contatti</p>
+          <p className="text-primary uppercase tracking-[0.25em] text-sm mb-3">Contact</p>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground">
-            Parliamo del Tuo
-            <span className="text-gradient-gold italic"> Progetto</span>
+            Let's Talk About Your
+            <span className="text-gradient-gold italic"> Needs</span>
           </h2>
         </div>
 
@@ -23,14 +23,14 @@ const ContactSection = () => {
               },
               {
                 icon: MapPin,
-                title: "Sede",
+                title: "Location",
                 value: "Ireland",
                 href: null,
               },
               {
                 icon: Phone,
-                title: "Telefono",
-                value: "Contattaci via email",
+                title: "Phone",
+                value: "Get in touch via email",
                 href: null,
               },
             ].map((item) => (
@@ -55,7 +55,7 @@ const ContactSection = () => {
               href="mailto:info@gbpremiumservices.com"
               className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground px-10 py-4 rounded-sm text-sm font-medium tracking-widest uppercase transition-all hover:shadow-lg hover:shadow-primary/25"
             >
-              Richiedi un Preventivo
+              Request a Quote
             </a>
           </div>
         </div>
