@@ -6,9 +6,9 @@ const Navbar = () => {
 
   const links = [
     { label: "Home", href: "#home" },
-    { label: "Prodotti", href: "#products" },
-    { label: "Chi Siamo", href: "#about" },
-    { label: "Contatti", href: "#contact" },
+    { label: "Products", href: "#products" },
+    { label: "About", href: "#about" },
+    { label: "Contact", href: "#contact" },
   ];
 
   return (
@@ -19,7 +19,6 @@ const Navbar = () => {
           <span className="text-primary-foreground/90">Premium Services</span>
         </a>
 
-        {/* Desktop */}
         <ul className="hidden md:flex items-center gap-8">
           {links.map((link) => (
             <li key={link.href}>
@@ -33,7 +32,6 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Mobile toggle */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden text-secondary-foreground"
@@ -43,7 +41,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden bg-secondary border-t border-primary/20 animate-fade-in">
           <ul className="flex flex-col items-center gap-4 py-6">

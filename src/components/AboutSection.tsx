@@ -4,10 +4,10 @@ const AboutSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-primary uppercase tracking-[0.25em] text-sm mb-3">Chi Siamo</p>
+            <p className="text-primary uppercase tracking-[0.25em] text-sm mb-3">About Us</p>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-secondary-foreground">
-              Una Passione per la
-              <span className="text-gradient-gold italic"> Qualità</span>
+              A Passion for
+              <span className="text-gradient-gold italic"> Quality</span>
             </h2>
           </div>
 
@@ -15,24 +15,24 @@ const AboutSection = () => {
             <div>
               <p className="text-secondary-foreground/80 leading-relaxed mb-6 text-lg">
                 <span className="font-display text-2xl text-primary font-semibold">GB Premium Services</span>{" "}
-                è un'azienda specializzata nella fornitura di prodotti alimentari premium per il settore
-                alberghiero e della ristorazione.
+                specialises in premium food supplies for the hotel and hospitality industry.
               </p>
               <p className="text-secondary-foreground/70 leading-relaxed mb-6">
-                Con sede operativa in Irlanda, serviamo hotel di lusso e strutture ricettive in tutta Europa,
-                garantendo prodotti di altissima qualità per le colazioni dei vostri ospiti.
+                Based in Ireland, we serve luxury hotels and hospitality venues across Europe — 
+                delivering the highest quality breakfast products your guests deserve.
               </p>
               <p className="text-secondary-foreground/70 leading-relaxed">
-                La nostra specialità sono i waffle belgi premium, prodotti artigianalmente con ingredienti
-                selezionati e una ricetta tradizionale che assicura croccantezza e sapore inconfondibili.
+                From our signature Belgian waffles to a full range of pastries, fresh produce,
+                cereals, and spreads — we provide everything needed to create an unforgettable
+                breakfast experience.
               </p>
             </div>
 
             <div className="space-y-8">
               {[
-                { number: "500+", label: "Hotel Serviti" },
-                { number: "12", label: "Paesi Europei" },
-                { number: "100%", label: "Qualità Garantita" },
+                { number: "500+", label: "Hotels Served" },
+                { number: "12", label: "European Countries" },
+                { number: "100%", label: "Quality Guaranteed" },
               ].map((stat) => (
                 <div key={stat.label} className="flex items-center gap-6">
                   <span className="font-display text-4xl font-bold text-gradient-gold min-w-[100px]">

@@ -7,7 +7,7 @@ const Footer = () => {
             <span className="text-gradient-gold">GB</span> Premium Services
           </div>
           <p className="text-secondary-foreground/50 text-sm">
-            © {new Date().getFullYear()} GB Premium Services. Tutti i diritti riservati.
+            © {new Date().getFullYear()} GB Premium Services. All rights reserved.
           </p>
         </div>
       </div>

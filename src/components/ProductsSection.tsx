@@ -1,37 +1,44 @@
 import wafflesImage from "@/assets/waffles-product.jpg";
 import buffetImage from "@/assets/breakfast-buffet.jpg";
-import { UtensilsCrossed, Truck, Award } from "lucide-react";
+import { UtensilsCrossed, Truck, Award, Coffee, Croissant, Apple } from "lucide-react";
 
 const products = [
   {
-    title: "Waffle Belgi Premium",
-    description: "Waffle artigianali croccanti fuori, morbidi dentro. Prodotti con ingredienti selezionati e ricetta tradizionale belga.",
+    title: "Premium Waffles",
+    description: "Artisan Belgian waffles — crispy on the outside, fluffy on the inside. Made with carefully selected ingredients and a traditional recipe.",
     image: wafflesImage,
     alt: "Stack of golden Belgian waffles",
   },
   {
-    title: "Buffet Colazione Completo",
-    description: "Fornitura completa per buffet colazione: waffle, croissant, pasticceria, frutta fresca e molto altro.",
+    title: "Full Breakfast Supply",
+    description: "Complete hotel breakfast supply including pastries, croissants, fresh fruit, cereals, jams, spreads, and much more — everything your guests expect.",
     image: buffetImage,
     alt: "Elegant hotel breakfast buffet spread",
   },
 ];
 
+const categories = [
+  { icon: UtensilsCrossed, label: "Waffles & Pancakes" },
+  { icon: Croissant, label: "Pastries & Baked Goods" },
+  { icon: Coffee, label: "Cereals & Granola" },
+  { icon: Apple, label: "Fresh Produce" },
+];
+
 const features = [
   {
     icon: UtensilsCrossed,
-    title: "Qualità Artigianale",
-    description: "Ingredienti selezionati e ricette tradizionali per un gusto autentico.",
+    title: "Artisan Quality",
+    description: "Carefully selected ingredients and traditional recipes for an authentic taste your guests will love.",
   },
   {
     icon: Truck,
-    title: "Consegna Affidabile",
-    description: "Logistica dedicata con consegne puntuali in tutta Europa.",
+    title: "Reliable Delivery",
+    description: "Dedicated logistics with punctual deliveries across Europe. Cold chain guaranteed.",
   },
   {
     icon: Award,
-    title: "Standard Premium",
-    description: "Certificazioni di qualità e controlli rigorosi su ogni lotto.",
+    title: "Premium Standards",
+    description: "Quality certifications and rigorous controls on every single batch we produce.",
   },
 ];
 
@@ -39,13 +46,25 @@ const ProductsSection = () => {
   return (
     <section id="products" className="py-24 bg-background">
       <div className="container mx-auto px-6">
-        {/* Section header */}
         <div className="text-center mb-20">
-          <p className="text-primary uppercase tracking-[0.25em] text-sm mb-3">I Nostri Prodotti</p>
+          <p className="text-primary uppercase tracking-[0.25em] text-sm mb-3">Our Products</p>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground">
-            Eccellenza per la Tua
-            <span className="text-gradient-gold italic"> Colazione</span>
+            Premium Supplies for Your
+            <span className="text-gradient-gold italic"> Breakfast</span>
           </h2>
+        </div>
+
+        {/* Categories strip */}
+        <div className="flex flex-wrap justify-center gap-4 mb-16">
+          {categories.map((cat) => (
+            <div
+              key={cat.label}
+              className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-border bg-card text-muted-foreground text-sm font-medium"
+            >
+              <cat.icon className="w-4 h-4 text-primary" />
+              {cat.label}
+            </div>
+          ))}
         </div>
 
         {/* Product cards */}
