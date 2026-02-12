@@ -40,7 +40,7 @@ const ContactSection = () => {
                 </div>
                 <h3 className="font-display text-lg font-semibold text-foreground mb-2">{item.title}</h3>
                 {item.href ? (
-                  <a href={item.href} className="text-muted-foreground hover:text-primary transition-colors text-sm break-all">
+                  <a href={item.href} className="text-muted-foreground hover:text-primary transition-colors text-sm whitespace-nowrap inline-block text-left">
                     {item.value}
                   </a>
                 ) : (
