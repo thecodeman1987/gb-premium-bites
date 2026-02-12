@@ -30,7 +30,7 @@ const AboutSection = () => {
 
             <div className="space-y-8">
               {[
-                { number: "0+", label: "Hotels Served" },
+                { number: "500+", label: "Hotels Served" },
                 { number: "12", label: "European Countries" },
                 { number: "100%", label: "Quality Guaranteed" },
               ].map((stat) => (
