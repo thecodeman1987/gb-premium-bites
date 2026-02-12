@@ -39,7 +39,7 @@ const HeroSection = () => {
         <div className="animate-fade-up" style={{ animationDelay: "0.8s" }}>
           <a
             href="#products"
-            className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground px-10 py-4 rounded-sm text-sm font-medium tracking-widest uppercase transition-all hover:shadow-lg hover:shadow-primary/25"
+            className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground px-10 py-4 rounded-full text-sm font-medium tracking-widest uppercase transition-all hover:shadow-lg hover:shadow-primary/25"
           >
             Discover Our Products
           </a>
