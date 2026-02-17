@@ -30,7 +30,7 @@ const ContactSection = () => {
               {
                 icon: Phone,
                 title: "Phone",
-                value: "Get in touch via email",
+                value: "+353 851335880",
                 href: null,
               },
             ].map((item) => (
